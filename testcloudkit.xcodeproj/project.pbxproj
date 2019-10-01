@@ -14,6 +14,7 @@
 		C2763B552343842E00594FF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2763B542343842E00594FF6 /* Assets.xcassets */; };
 		C2763B582343842E00594FF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2763B572343842E00594FF6 /* Preview Assets.xcassets */; };
 		C2763B5B2343842E00594FF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2763B592343842E00594FF6 /* LaunchScreen.storyboard */; };
+		C2763B652343855C00594FF6 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2763B642343855C00594FF6 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		C2763B572343842E00594FF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C2763B5A2343842E00594FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2763B5C2343842E00594FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2763B622343855000594FF6 /* testcloudkit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testcloudkit.entitlements; sourceTree = "<group>"; };
+		C2763B642343855C00594FF6 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2763B652343855C00594FF6 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +48,7 @@
 			children = (
 				C2763B4A2343842E00594FF6 /* testcloudkit */,
 				C2763B492343842E00594FF6 /* Products */,
+				C2763B632343855C00594FF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +63,7 @@
 		C2763B4A2343842E00594FF6 /* testcloudkit */ = {
 			isa = PBXGroup;
 			children = (
+				C2763B622343855000594FF6 /* testcloudkit.entitlements */,
 				C2763B4B2343842E00594FF6 /* AppDelegate.swift */,
 				C2763B4D2343842E00594FF6 /* SceneDelegate.swift */,
 				C2763B522343842E00594FF6 /* ContentView.swift */,
@@ -76,6 +82,14 @@
 				C2763B572343842E00594FF6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C2763B632343855C00594FF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2763B642343855C00594FF6 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testcloudkit/testcloudkit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"testcloudkit/Preview Content\"";
 				DEVELOPMENT_TEAM = FL3R79336R;
@@ -308,6 +323,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testcloudkit/testcloudkit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"testcloudkit/Preview Content\"";
 				DEVELOPMENT_TEAM = FL3R79336R;
