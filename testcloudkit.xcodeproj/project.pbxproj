@@ -29,6 +29,7 @@
 		C2763B5C2343842E00594FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2763B622343855000594FF6 /* testcloudkit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testcloudkit.entitlements; sourceTree = "<group>"; };
 		C2763B642343855C00594FF6 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		C2763B6623438E5700594FF6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,7 @@
 		C2763B3F2343842E00594FF6 = {
 			isa = PBXGroup;
 			children = (
+				C2763B6623438E5700594FF6 /* README.md */,
 				C2763B4A2343842E00594FF6 /* testcloudkit */,
 				C2763B492343842E00594FF6 /* Products */,
 				C2763B632343855C00594FF6 /* Frameworks */,

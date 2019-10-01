@@ -32,8 +32,8 @@ struct ContentView: View {
                 user.firstName = "Bart"
                 user.lastName = "Jacobs"
                 
-//                account.addToUsers(user)
-                account.users = user
+                account.addToUsers(user)
+                // account.users = user
                 
                 do {
                     try self.managedObjectContext.save()
